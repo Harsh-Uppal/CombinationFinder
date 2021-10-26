@@ -72,6 +72,8 @@ function ShowResults(result) {
 
     HideResults();
 
+    console.log(result);
+    
     if (!Array.isArray(result)){
         console.error('Invalid argument passed into ShowResults');
         return;
