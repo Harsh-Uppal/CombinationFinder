@@ -1,0 +1,126 @@
+:root{
+    --fontSize--:2vw;
+}
+
+h1{
+    font-size: 4vw;
+    font-family: inherit;
+    margin-bottom: 8vh;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto','Sans-Serif';
+    font-size: var(--fontSize--);
+}
+
+.InputContainer{
+    display:flex;
+    max-width:75vw;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.InputContainer > label{
+    font-size:inherit;
+    font-family: inherit;
+    margin-right:10%;
+    width:400vw;
+}
+
+.InputContainer > input{
+    font-size:inherit;
+}
+
+.divisions{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow:column;
+}
+
+.divisions > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40vw;
+    margin-bottom: 2vh;
+}
+
+.divisions > * > input{
+    width:100%;
+    font-size: inherit;
+}
+
+.combinationFinderButton{
+    margin-top:10vh;
+    font-size: 3vh;
+    padding:2vh;
+    background-color: cyan;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.combinationFinderButton:hover{
+    background-color: rgb(112, 245, 245);
+}
+
+.combinationFinderButton:active{
+    background-color: cyan;
+}
+
+.darkSheet{
+    position:absolute;
+    z-index:1;
+    background-color: rgba(0, 0, 0, .3);
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+}
+
+.combinationsDisplay{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
+    position: absolute;
+    background-color: wheat;
+    padding: 0 7vh 7vh 7vh;
+    border-radius: 10vh;
+    z-index: 2;
+    align-items: center;
+}
+
+.combinationsList{
+    list-style: lower-roman;
+    font-weight: bold;
+}
+
+.backBtn{
+    width:20vw;
+    font-size: var(--fontSize--);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+    background-color: cyan;
+    margin-top:5vh;
+    cursor: pointer;
+}
+
+.backBtn:hover{
+    background-color: rgb(112, 245, 245);
+}
+
+.backBtn:active{
+    background-color: cyan;
+}

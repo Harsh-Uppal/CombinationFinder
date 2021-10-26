@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Possible Combinations Finder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='stylesheet.css' />
+
+    <script src='app.js'></script>
+</head>
+
+<body>
+
+    <h1>Possible Combinations Finder</h1>
+
+    <div class="InputContainer">
+        <label>Number of divisions : </label>
+        <input id="noOfDivsInput" type='number' value='1' onchange="GenerateDivs()" onkeyup="GenerateDivs()"/>
+    </div>
+
+    <div class="InputContainer">
+        <label>Sum : </label>
+        <input id="sumInput" type='number' value='1'/>
+    </div>
+
+    <h3>Divisions</h3>
+
+    <div class="divisions">
+        <div id="div0">
+            <input placeholder="Division 1"/>
+        </div>
+    </div>
+
+    <button class="combinationFinderButton" onclick="FindPossibleCombinations()">Find All Possible Combinations</button>
+
+    <div class="darkSheet" style="display:none;"></div>
+
+    <div class="combinationsDisplay" style="display:none;">
+        <h3>All possible combinations :</h3>
+        <ol class="combinationsList">
+            <li>3 2 3</li>
+            <li>3 2 3</li>
+            <li>3 2 3</li>
+            <li>3 2 3</li>
+        </ol> 
+        <button class="backBtn" onclick="HideResults()">Back</button> 
+    </div>
+</body>
+
+</html>
